@@ -40,7 +40,7 @@ Predict the new sample data.
 
 #Developed by: S.sanjay
 #Registration no.: 212221230086
-
+```
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.models import Sequential
@@ -185,6 +185,7 @@ with open('customer_data.pickle', 'rb') as fh:
 x_single_prediction = np.argmax(ai_brain.predict(X_test_scaled[1:2,:]), axis=1)
 print(x_single_prediction)
 print(le.inverse_transform(x_single_prediction))
+```
 
 
 ## Dataset Information
